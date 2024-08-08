@@ -15,7 +15,6 @@ window.onload = async () => {
 
 
     nextButton.addEventListener('click', loadNextPage)
-
     backButton.addEventListener('click', loadPreviousPage)
 
     modal.addEventListener('click', hideModal)
