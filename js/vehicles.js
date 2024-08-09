@@ -20,7 +20,7 @@ window.onload = async () => {
 };
 
 //chama os veículos
-async function loadVehicles() {
+async function loadVehicles(url) {
     // limpa os resultados anteriores
     const mainContent = document.getElementById('main-content');
     mainContent.innerHTML = "";
@@ -61,9 +61,9 @@ async function loadVehicles() {
                 vehicleImage.className = 'vehicles-image';
 
                 // cria os dados do veículos
-                const nameVehicles = document.createElement('span');
-                nameVehicles.className = 'vehicles-details';
-                nameVehicles.innerText = `Nome: ${vehicles.name}`
+                const vehicleName = document.createElement('span');
+                vehicleName.className = 'vehicles-details';
+                vehicleName.innerText = `Nome: ${vehicles.name}`
 
                 const model = document.createElement('span');
                 model.className = 'vehicles-details';
@@ -75,10 +75,10 @@ async function loadVehicles() {
 
                 const capacity = document.createElement('span');
                 capacity.className = 'vehicles-details';
-                capacity.innerText = `Capacidade: ${vehicles.capacity}`;
+                capacity.innerText = `Capacidade: ${vehicles.cargo_capacity}`;
 
                 modalContent.appendChild(vehicleImage);
-                modalContent.appendChild(nameVehicles);
+                modalContent.appendChild(vehicleName);
                 modalContent.appendChild(model);
                 modalContent.appendChild(manufacturer);
                 modalContent.appendChild(capacity);
@@ -111,7 +111,7 @@ async function loadNextPage() {
         const response = await fetch(currentPageUrl);
         const responseJson = await response.json();
 
-        await loadCharacters(responseJson.next);
+        await loadVehicles(responseJson.next);
     } catch (error) {
         alert("Erro ao carregar a próxima pagina");
     }
@@ -125,7 +125,7 @@ async function loadPreviousPage() {
         const response = await fetch(currentPageUrl);
         const responseJson = await response.json();
 
-        await loadCharacters(responseJson.previous);
+        await loadVehicles(responseJson.previous);
     } catch (error) {
         alert("Erro ao carregar a pagina anterior");
     }
