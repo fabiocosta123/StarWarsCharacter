@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url('./assets/universo.jpeg');
+    background-image: url('../assets/universo.jpeg');
     background-size: cover;
 }
 
@@ -46,10 +46,15 @@ header{
     color: gold;
 }
 
+
 .nav-starships{
     font-family: "Star Wars", sans-serif;
     font-size: .8rem;
     font-weight: lighter;
+}
+
+.nav-starships:hover{
+    color: gold;
 }
 
 .nav-starships:hover{
@@ -62,8 +67,9 @@ header{
     font-weight: lighter;
 }
 
+
 .nav-vehicles:hover{
-    color: gold;
+    color:gold;
 }
 
 .nav-planets{
@@ -91,6 +97,7 @@ i:hover{
     color: gold;
 }
 
+
 .main-container{
     display: flex;
     align-items: center;
@@ -116,10 +123,11 @@ h2{
     padding: 0 20px;
 }
 
+
 .cards{
    
-    width: 230px;
-    height: 470px;
+    width: 300px;
+    height: 300px;
     background-position: 50% 50%;
     background-size: cover;
     display: flex;
@@ -135,7 +143,7 @@ h2{
 
 }
 
-.character-name-bg{
+.planets-name-bg{
     width: 100%;
     height: 30px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -145,11 +153,12 @@ h2{
     border-radius: 10px;
 }
 
-.character-name {
+.planets-name {
     font-family: "Star Wars", sans-serif;
     color:gold;
     font-size: 1rem;
 }
+
 
 
 .buttons {
@@ -205,6 +214,7 @@ footer{
     font-weight: 500;
 }
 
+
 .modal{
     visibility: hidden;
     display: flex;
@@ -229,7 +239,7 @@ footer{
     align-items: center;
 }
 
-.character-image{
+.planets-image{
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -237,10 +247,12 @@ footer{
     background-size: cover;
 }
 
-.character-details{
+.planets-details{
     font-family: "Star Wars", sans-serif;
     font-size: 1rem;
     font-weight: lighter;
     color: gold;
 
 }
+
+

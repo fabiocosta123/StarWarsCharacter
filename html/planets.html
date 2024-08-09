@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/millenium-falcon.jpeg" type="image/x-icon">
-    <title>Star Wars Characters</title>
+    <link rel="stylesheet" href="../css/planets.css">
+    <title>Planetas</title>
 </head>
 <body>
     <header>
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../assets/logoStar.png" alt="Logo" class="logo-img">
+                <span class="logo-text">Character</span>
+            </div>
+        </a>
 
-      <a href="./index.html">
-        <div class="logo">
-            <img src="./assets/logoStar.png" alt="Logo" class="logo-img"/>
-            <span class="logo-text">Characters</span>
-        </div>       
-      </a>
+        <a href="./starships.html" class="nav-starships">Naves Estelares</a>
+        <a href="./vehicles.html" class="nav-vehicles">Veiculos</a>
+        <a href="./planets.html" class="nav-planets">Planetas</a>
 
-    
         
-        <a href="./html/starships.html" class="nav-starships">Naves Estelares</a>
-        <a href="./html/vehicles.html" class="nav-vehicles">Veículos</a>
-        <a href="./html/planets.html" class="nav-planets">Planetas</a>
-        
-     
-
       <div class="redes-sociais">
         <a href="https://www.instagram.com/fabio_c_silva_developer/" target="_blank">
             <i class="fa-brands fa-instagram"></i> 
@@ -36,38 +32,30 @@
         <a href="https://www.linkedin.com/in/fabiocosta123/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
         </a>
-      </div>
-
+    </div>
     </header>
 
-    <div class="main-container">
-
-        <h2>Conheca todos os personagens de Star Wars em um so lugar</h2>
-
-        <div class="main-content" id="main-content"> </div>
+    <div class="main-container" id="main-container">
+        <h2>Conheca os planetas do filme...</h2>
+        <div class="main-content" id="main-content"></div>
 
         <div class="modal" id="modal">
-          <div class="modal-content" id="modal-content"></div>
+            <div class="modal-content" id="modal-content"></div>
         </div>
 
-
-      <div class="buttons">
-        <button id="back-button" disabled>Anterior</button>
-        <button id="next-button" disabled>Próxima</button>
-      </div>
-        
-
+        <div class="buttons">
+            <button id="back-button" disabled>Anterior</button>
+            <button id="next-button" disabled>Próximo</button>           
+        </div>
     </div>
 
+    
     <footer>
         <p class="footer-logo">Star Wars Characters</p>
         <p class="copyrigth">Desenvolvido por Fábio Costa &copy;</p>
     </footer>
- 
-
-
 
     <script src="https://kit.fontawesome.com/0d61c2fd9d.js" crossorigin="anonymous"></script>
-    <script type="module" src="script.js"></script>
+    <script src="../js/planets.js"></script>
 </body>
 </html>

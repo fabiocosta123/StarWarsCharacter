@@ -72,6 +72,16 @@ header{
     color:gold;
 }
 
+.nav-planets{
+    font-family: "Star Wars", sans-serif;
+    font-size: .8rem;
+    font-weight: lighter;
+}
+
+.nav-planets:hover{
+    color: gold;
+}
+
 .redes-sociais{
     width: 130px;
     display: flex;

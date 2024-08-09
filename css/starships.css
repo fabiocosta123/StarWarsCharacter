@@ -60,14 +60,24 @@ header{
     color: gold;
 }
 
-.nav-vehicles:hover{
-    color:gold;
-}
-
 .nav-vehicles{
     font-family: "Star Wars", sans-serif;
     font-size: .8rem;
     font-weight: lighter;
+}
+
+.nav-vehicles:hover{
+    color:gold;
+}
+
+.nav-planets{
+    font-family: "Star Wars", sans-serif;
+    font-size: .8rem;
+    font-weight: lighter;
+}
+
+.nav-planets:hover{
+    color: gold;
 }
 
 .redes-sociais{
